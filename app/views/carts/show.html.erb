@@ -5,6 +5,13 @@
   </header>
 
   <div class="panel panel-default items">
+  <% unless cart.size >= 1 %>
+   <div id="empty-cart">
+      <p>Your Cart is empty!!</p>
+      <a href="/">Back to home</a>
+   </div>
+  <% end %>
+
     <table class="table table-bordered">
       <thead>
         <tr>

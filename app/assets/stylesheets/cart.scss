@@ -3,6 +3,11 @@
     width: max-content;
   }
 
+  .th-cart {
+    min-width: 100px;
+    text-align: center;
+  }
+
   button.stripe-button-el span {
     border-radius: 0.25em;
     border: 0.1em solid rgba(0, 130, 29, 0.8);

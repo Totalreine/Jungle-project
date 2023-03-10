@@ -1,2 +1,6 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Dashboard</h1>
+
+<h3>Currently you have saved <%= @products %> products </h3>
+<h3>The products are grouped in <%= @categories %> categories  </h3>
+
+<h3><%= link_to 'Go to products', admin_products_path %></h3>

@@ -3,10 +3,6 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @line_items = LineItem.where(order_id: params[:id])
-    def find_prod(id)
-      Product.where(id)
-    end
-
   end
 
   def create
@@ -25,8 +21,6 @@ class OrdersController < ApplicationController
   end
 
   private
-
-  
 
   def empty_cart!
     # empty hash means no products in cart :)

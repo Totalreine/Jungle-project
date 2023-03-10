@@ -8,6 +8,11 @@
 </header>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-nav">
   <div class="container">
+    <% if current_user != nil %>
+      <a class="navbar-brand" href="<%= logout_path %>">Logout</a>
+    <% else %>
+      <a class="navbar-brand" href="<%= signup_path %>">Signup</a>
+    <% end %>
     <a class="navbar-brand" href="<%= about_index_path %>">About us</a>
     <a class="navbar-brand" href="<%= root_path %>">Jungle</a>
     <button
